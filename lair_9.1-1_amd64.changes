@@ -1,0 +1,53 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 19 Feb 2017 17:49:03 -0500
+Source: lair
+Binary: lair
+Architecture: source amd64
+Version: 9.1-1
+Distribution: unstable
+Urgency: medium
+Maintainer: lair repo key <problemsolver@openmailbox.org>
+Changed-By: lair repo key <problemsolver@openmailbox.org>
+Description:
+ lair       - LAIR! Roguelike Game, version 0.9
+Changes:
+ lair (9.1-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ bc9727e2fa6350799a9ee0665a366a3469f3a789 1550 lair_9.1-1.dsc
+ 91fb7a80afb84c539c56ee79bd5e5301552ee685 5015365 lair_9.1.orig.tar.gz
+ 1bbc2be50823d109d091f2c84c59a9c52ea10ac8 9836 lair_9.1-1.debian.tar.xz
+ c8f29c4463f7a5134586cbd479b98a704b0f1c5b 372350 lair-dbgsym_9.1-1_amd64.deb
+ e303055e04dd2638090f88d3ec7727beffcca592 11710 lair_9.1-1_amd64.buildinfo
+ 853ce85ffbc722a5d97a84bb12887ae7fd844534 64952 lair_9.1-1_amd64.deb
+Checksums-Sha256:
+ 11ae1f108882574e517e711a8ac99f763bf6838ef98f0cc14abca6bbc37e2b83 1550 lair_9.1-1.dsc
+ dc6cadf2133c79c4f5cab17302bada19edf241cfc13fa0b08fdd06a3c1aa859a 5015365 lair_9.1.orig.tar.gz
+ 65a288ca916c22ce1e3880ceb69292f8319240a94c636e754292ca834b487718 9836 lair_9.1-1.debian.tar.xz
+ d3ed0ec6365582a060eb4205d0caf2a10c365949f8e710a48e34b641dafce1a8 372350 lair-dbgsym_9.1-1_amd64.deb
+ 858195e4598117f36906fb79c85fc5cd8dab662439f60c790946006ede08e43a 11710 lair_9.1-1_amd64.buildinfo
+ 70d3a86ef2dd62015bc5d56db30d4f35fef3d63d95e31cefa3843cefac2d5e55 64952 lair_9.1-1_amd64.deb
+Files:
+ 4d0cb36fc538862b455dd35984f2fb23 1550 games extra lair_9.1-1.dsc
+ 9c73c54df087b51140d91820c8271290 5015365 games extra lair_9.1.orig.tar.gz
+ 9ce4044a7b0094b4acfc2115fd1527e2 9836 games extra lair_9.1-1.debian.tar.xz
+ 6df2261cc4c1ca95aa111bec5d216ca9 372350 debug extra lair-dbgsym_9.1-1_amd64.deb
+ 37d72456ad687ff0f06e213cbdffde07 11710 games extra lair_9.1-1_amd64.buildinfo
+ 3cf7a58739ef7bb323a59815f4918820 64952 games extra lair_9.1-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljjHE0eHHByb2JsZW1z
+b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrqTYIAMg2ODs/B8rY43bP
+fsY+hHnkA5N8FIO3bwT+svtJ8p432ODo2/3XTwCiIEPxvbQhoKos6IAYhMCEvlZa
+tTas4+by0fyYmYeKrHxFte7iBZsIbhs1iXGfM3lgqUpru6LqSen2WQ9NFe+uR7qJ
+Up2RgL+jnARBrIM0i8v3BqkLCN/x1iUh5A+mtzF/58pjDMLSlGz7XdSsItKRQ0/p
+jgVgil6rjV3/Iby7xf/wpBIVULm8cUtVcRUjeE5bBl6zNnyQDvF4Yh18RfGORdgq
+5zILS8iHlRWbEeJoN11QraS5fpJkmXjZ86S9GesQ37SQxI85oPetC020IfjZqGV8
+pohbqww=
+=rPyL
+-----END PGP SIGNATURE-----

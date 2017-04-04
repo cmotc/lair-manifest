@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin"
+          fetch="." />
+
+  <default remote="origin"
+           revision="master" />
+
+  <project path="repo1" name="repo1" />
+  <project path="repo2" name="repo2" />
+</manifest>
