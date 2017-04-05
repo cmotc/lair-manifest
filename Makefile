@@ -138,6 +138,8 @@ full:
 	make msi
 	make deb
 	make web
+
+push:
 	make commit
 	make update
 
