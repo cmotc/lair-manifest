@@ -13,6 +13,6 @@
   <project path="lair-web" name="lair-web" />
   <project path="tartrazine" name="tartrazine" />
   <project path="tox-vapi" name="tox-vapi" />
-  <project path="sdl2-vapi" name="sdl2-vapi" />
+  <project path="sdl2-vapi" name="sdl2-vap/" />
 
 </manifest>
