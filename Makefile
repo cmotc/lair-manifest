@@ -56,15 +56,15 @@ commit:
 	echo "${COMMIT_MESSAGE}"
 
 update:
-	cd valair && \git push github mobs
-	cd sdl2-vapi && \git push github master
-	cd tox-vapi && \git push github master
-	cd tartrazine && \git push github master
-	cd lairart && \git push github gh-pages
-	cd lair-deb && \git push github gh-pages
-	cd lair-msi && \git push github master
-	cd lair-web && \git push github master
-	\git push github master
+	\git push github master; \
+	cd valair && \git push github mobs; \
+	cd ../sdl2-vapi && \git push github master; \
+	cd ../tox-vapi && \git push github master; \
+	cd ../tartrazine && \git push github master; \
+	cd ../lairart && \git push github gh-pages; \
+	cd ../lair-deb && \git push github gh-pages; \
+	cd ../lair-msi && \git push github master; \
+	cd ../lair-web && \git push github master;
 	echo "Pushed Working Updates"
 
 clean:
@@ -144,7 +144,6 @@ push:
 	make update
 
 release:
-	make clean
 	make full
 	make push
 	repo sync
