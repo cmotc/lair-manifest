@@ -4,6 +4,7 @@
           fetch="git://github.com/cmotc/" />
 
   <default remote="origin"
+           pushurl="git@github.com:cmotc/"
            revision="master" />
   <project path="." name="lair-manifest" />
   <project path="lairart" name="lairart" />

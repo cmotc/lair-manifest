@@ -6,3 +6,6 @@ valair
 sdl2-vapi
 tartrazine
 tox-vapi
+.repo
+*/.repo
+*/.git
