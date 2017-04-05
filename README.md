@@ -43,7 +43,12 @@ fall back to using git if repo fails in any way. To completely bypass repo, do
 
         make pull
 
-instrad of make update. When you've made some changes, doing
+instead of make update. If you need to get a clean copy, you can do
+
+        make force-update
+
+to get the original sources and re-initialize the repositories. When you've made
+some changes, doing,
 
         make push
 

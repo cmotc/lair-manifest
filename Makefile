@@ -104,6 +104,12 @@ update:
 	make commit
 	repo sync --force-sync || make fetch
 
+force-update:
+	rm -rf */* */.git */.repo; \
+	make clean; \
+	make update; \
+	make init
+
 upload:
 	\git push github master; \
 	cd valair && \git push github mobs; \
