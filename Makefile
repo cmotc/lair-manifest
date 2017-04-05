@@ -139,7 +139,7 @@ msi:
 
 update-msi:
 	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
-		\git push
+		\git push github master
 
 
 web:
