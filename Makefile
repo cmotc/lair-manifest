@@ -1,6 +1,7 @@
 DATE = `date +'%Y%m%d'`
 GVERSION = '9.1'
 VERSION = '9.1'
+GH_NAME = 'cmotc'
 
 COMMIT_MESSAGE = `date +'%y-%m-%d-%H-%M-%S'`
 
@@ -20,15 +21,27 @@ deinit:
 	echo "removed pre-init"
 
 init:
-	\git remote add github git@github.com:cmotc/lair-manifest
-	cd valair && \git remote add github git@github.com:cmotc/valair
-	cd sdl2-vapi && \git  remote add github git@github.com:cmotc/sdl2-vapi
-	cd tox-vapi && \git  remote add github git@github.com:cmotc/tox-vapi
-	cd tartrazine && \git  remote add github git@github.com:cmotc/tartrazine
-	cd lairart && \git  remote add github git@github.com:cmotc/lairart
-	cd lair-deb && \git  remote add github git@github.com:cmotc/lair-deb
-	cd lair-msi && \git  remote add github git@github.com:cmotc/lair-msi
-	cd lair-web && \git  remote add github git@github.com:cmotc/lair-web
+	\git remote add github git@github.com:$(GH_NAME)/lair-manifest
+	cd valair && \git remote add github git@github.com:$(GH_NAME)/valair
+	cd sdl2-vapi && \git  remote add github git@github.com:$(GH_NAME)/sdl2-vapi
+	cd tox-vapi && \git  remote add github git@github.com:$(GH_NAME)/tox-vapi
+	cd tartrazine && \git  remote add github git@github.com:$(GH_NAME)/tartrazine
+	cd lairart && \git  remote add github git@github.com:$(GH_NAME)/lairart
+	cd lair-deb && \git  remote add github git@github.com:$(GH_NAME)/lair-deb
+	cd lair-msi && \git  remote add github git@github.com:$(GH_NAME)/lair-msi
+	cd lair-web && \git  remote add github git@github.com:$(GH_NAME)/lair-web
+	echo "Initialized Working Remotes"
+
+init-upstream:
+	\git remote add upstream git@github.com:cmotc/lair-manifest
+	cd valair && \git remote add upstream git@github.com:cmotc/valair
+	cd sdl2-vapi && \git  remote add upstream git@github.com:cmotc/sdl2-vapi
+	cd tox-vapi && \git  remote add upstream git@github.com:cmotc/tox-vapi
+	cd tartrazine && \git  remote add upstream git@github.com:cmotc/tartrazine
+	cd lairart && \git  remote add upstream git@github.com:cmotc/lairart
+	cd lair-deb && \git  remote add upstream git@github.com:cmotc/lair-deb
+	cd lair-msi && \git  remote add upstream git@github.com:cmotc/lair-msi
+	cd lair-web && \git  remote add upstream git@github.com:cmotc/lair-web
 	echo "Initialized Working Remotes"
 
 checkout:
@@ -56,6 +69,10 @@ commit:
 	echo "${COMMIT_MESSAGE}"
 
 update:
+	make commit
+	repo sync
+
+upload:
 	\git push github master; \
 	cd valair && \git push github mobs; \
 	cd ../sdl2-vapi && \git push github master; \
