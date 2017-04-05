@@ -13,24 +13,24 @@ Build-Depends: debhelper (>= 9), liblua5.2-dev, libsdl2-dev, libsdl2-gfx-dev, li
 Package-List:
  lair deb games extra arch=amd64
 Checksums-Sha1:
- 91fb7a80afb84c539c56ee79bd5e5301552ee685 5015365 lair_9.1.orig.tar.gz
+ c755f24420aa4b4deada634c6afab16fc2f9eefc 5024046 lair_9.1.orig.tar.gz
  1bbc2be50823d109d091f2c84c59a9c52ea10ac8 9836 lair_9.1-1.debian.tar.xz
 Checksums-Sha256:
- dc6cadf2133c79c4f5cab17302bada19edf241cfc13fa0b08fdd06a3c1aa859a 5015365 lair_9.1.orig.tar.gz
+ 50086457047d8cee90101b5ef3281230ad5d99a0e2c66df19c5075e06b626439 5024046 lair_9.1.orig.tar.gz
  65a288ca916c22ce1e3880ceb69292f8319240a94c636e754292ca834b487718 9836 lair_9.1-1.debian.tar.xz
 Files:
- 9c73c54df087b51140d91820c8271290 5015365 lair_9.1.orig.tar.gz
+ fa0ca3b9d3ef25662a4548b4968a77e1 5024046 lair_9.1.orig.tar.gz
  9ce4044a7b0094b4acfc2115fd1527e2 9836 lair_9.1-1.debian.tar.xz
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljjHE0eHHByb2JsZW1z
-b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrt7gH/iXTZ3b4DhCpl6ss
-tFiQIPG2NkQUFJ3GPMRaLc9bBjmrAxQXE22Pf6YY9hE3YsSwXm33Hn0f0CLbOB+8
-xDxG/Ps6tRIp6ZcEv9Qx8hYBEAxc1KL7nPUlKqtd0X8ssiGUzvq06r3lOHsrhnNj
-x+hyc4WWTl1CawOAgvnhtWT0TivxTh139aGWzUjqTVn76vXDHHhNAJlej3/cFWX7
-eacVdNbD9hP6RHlszKfq8sQFxdt1feXmi77eTu421oMbCpueZxliapnJPlRXwxA+
-vwZPIRU8yhdOZ54MSWmQADNsC6Kf1KFocK+tvT0icRZrFUJ+/8loYR39v9tJqyTV
-lkosejA=
-=JWSQ
+iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkSqAeHHByb2JsZW1z
+b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrx9MIANII+ophPGyFYuIl
+pbabHbGSq+XFIGSF3qYZgKCceG53ZPJAHeem+eB9sFMEBCyhMSEDp6hqHvO7AosV
+IjpgdjqPFml0fF3I2ElRWJJc58vKbWtLgBD8tzImXHr9qACEKqivMvDtcvxu1sbo
+wN/rXi8J+KKZ5maAvOOSpihOWCD6vNP6zMypULbsQOd32rkNx0kSPVftixRbWSLx
+f+WA16c4B3QA0ICXSy9lnCTTGNU6I5GsIOFi/lczk52j3fVQAKWWvJWKoDrIgUUo
+7+rjyjT6qwmHBTJw8ZdXlQ4JuIFPhVrIinStCvJcnz/XRplpz5m9PBfbJ6pDCquX
+rTfu5h0=
+=XP9n
 -----END PGP SIGNATURE-----

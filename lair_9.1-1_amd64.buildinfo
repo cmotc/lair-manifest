@@ -7,20 +7,20 @@ Binary: lair
 Architecture: amd64 source
 Version: 9.1-1
 Checksums-Md5:
- 4d0cb36fc538862b455dd35984f2fb23 1550 lair_9.1-1.dsc
- 6df2261cc4c1ca95aa111bec5d216ca9 372350 lair-dbgsym_9.1-1_amd64.deb
- 3cf7a58739ef7bb323a59815f4918820 64952 lair_9.1-1_amd64.deb
+ bd5ccb488f355fbc71813121775e0f33 1550 lair_9.1-1.dsc
+ a21e38288a47f980838f9382e16daa3b 373074 lair-dbgsym_9.1-1_amd64.deb
+ a13a5a749801094148c2f33e58f2009f 65056 lair_9.1-1_amd64.deb
 Checksums-Sha1:
- bc9727e2fa6350799a9ee0665a366a3469f3a789 1550 lair_9.1-1.dsc
- c8f29c4463f7a5134586cbd479b98a704b0f1c5b 372350 lair-dbgsym_9.1-1_amd64.deb
- 853ce85ffbc722a5d97a84bb12887ae7fd844534 64952 lair_9.1-1_amd64.deb
+ 0a3fe43a59ecaa7db53cc7524bd5222063b9bc35 1550 lair_9.1-1.dsc
+ b9c3a67f7f507c009a02bd5acd99c60b0d2c1a6d 373074 lair-dbgsym_9.1-1_amd64.deb
+ 255d3ec5f84343905a6c343cc699c573874ca95f 65056 lair_9.1-1_amd64.deb
 Checksums-Sha256:
- 11ae1f108882574e517e711a8ac99f763bf6838ef98f0cc14abca6bbc37e2b83 1550 lair_9.1-1.dsc
- d3ed0ec6365582a060eb4205d0caf2a10c365949f8e710a48e34b641dafce1a8 372350 lair-dbgsym_9.1-1_amd64.deb
- 70d3a86ef2dd62015bc5d56db30d4f35fef3d63d95e31cefa3843cefac2d5e55 64952 lair_9.1-1_amd64.deb
+ 1343fd1f00e3e081ff533425be20070c6af386fc0824143411a5b00a06eee22a 1550 lair_9.1-1.dsc
+ 1853ad5235be4f6d4b32b0d2745d509bb638617dc00d2375caf0461d371f4d76 373074 lair-dbgsym_9.1-1_amd64.deb
+ a8576ae68b388f670aa70a2b4480ccb0a86f69be913bb953e56fc34101d03082 65056 lair_9.1-1_amd64.deb
 Build-Origin: Devuan
 Build-Architecture: amd64
-Build-Date: Tue, 04 Apr 2017 00:08:42 -0400
+Build-Date: Tue, 04 Apr 2017 21:38:38 -0400
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
@@ -385,13 +385,13 @@ Environment:
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljjHE0eHHByb2JsZW1z
-b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQr1b0H/1sB1qbpXLufmSf9
-hcsydLpmgWDJpgPjtr5V/ak4B3Y4CE08K6attjSMCPlYKtdZ1/NQdGlkXN8a20Cr
-SXGMbG8XZ9gnVQPA2Dbk9bmYi+bGUJlH8QdqKFbTlkDRQze8Q7rRFdVAYIJEplJn
-qsDSDBXzsHCMEnQYQN7dBp3xrNBZDlfsvUcnXEjm0W1tkl8L20/gXABZkoADYVjZ
-bi2cQ++d0zL3JEHUq5Qhb9TseF1PHgrRJGJN8TdlKFGOReZuYQIEBiItUlsyLRQ+
-0nbyKiTboSo3ve3qOC/4pX1IN2Tvx6381vCY7Yn/OdGtsq/yj21pDfBkOtKBsnNj
-d4JzUl4=
-=6Qws
+iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkSqAeHHByb2JsZW1z
+b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrt4UH/1OXGGm0uCwvcaqr
+Zz7qu3sgbo1n0KMyENz+XAXbrV4jVcKjm/4bwOE0bYnXUUjiymrtKVJwC2mAKR1x
+gAN18xFqvc/Q+MMIPiT9MlD3xbY2WulJAEDGrnkcXCUK44DOfrVnjOus2kIn6zM6
+R59lqe7p1VT4NMs9Mg6cqD6r8Uvx7ZuMZ7CW/YsHvi51eW5BsiNn7sZqDkYEMcyT
+Hd+LoRCCzatKOm7A9eYCA5TLeLvrnQ4uRO9w79P8WeyS4F70gwXeC+bfozjIWaxK
+mLNHPJEckAkiNMpjBlIyEh1fyl6VFttx7oVPhYSmB826+3A1BbaxHvcac2rZS+Uc
+fIFcCw0=
+=dozZ
 -----END PGP SIGNATURE-----

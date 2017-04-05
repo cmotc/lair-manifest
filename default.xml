@@ -7,7 +7,7 @@
            revision="master" />
   <project path="." name="lair-manifest" />
   <project path="lairart" name="lairart" />
-  <project path="valair" name="valair" revision="new-master"/>
+  <project path="valair" name="valair" revision="mobs"/>
   <project path="lair-msi" name="lair-msi" />
   <project path="lair-deb" name="lair-deb" revision="gh-pages"/>
   <project path="lair-web" name="lair-web" />
