@@ -1,7 +1,8 @@
+include config.mk
 DATE = `date +'%Y%m%d'`
 GVERSION = '9.1'
 VERSION = '9.1'
-GH_NAME = 'cmotc'
+
 
 COMMIT_MESSAGE = $(GH_NAME)
 COMMIT_MESSAGE += $(DEV_MESSAGE)
@@ -10,6 +11,17 @@ COMMIT_MESSAGE += `date +'%y%m%d%H%M%S'`
 
 dummy:
 	echo "test"
+
+clone:
+	\git clone git@github.com:$(GH_NAME)/valair || \git clone https://github.com/$(GH_NAME)/valair || git clone https://github.com/cmotc/valair; \
+	\git clone git@github.com:$(GH_NAME)/sdl2-vapi || \git clone https://github.com/$(GH_NAME)/sdl2-vapi || git clone https://github.com/cmotc/sdl2-vapi; \
+	\git clone git@github.com:$(GH_NAME)/tox-vapi || \git clone https://github.com/$(GH_NAME)/tox-vapi || git clone https://github.com/cmotc/tox-vapi; \
+	\git clone git@github.com:$(GH_NAME)/tartrazine || \git clone https://github.com/$(GH_NAME)/tartrazine || git clone https://github.com/cmotc/tartrazine; \
+	\git clone git@github.com:$(GH_NAME)/lairart || \git clone https://github.com/$(GH_NAME)/lairart || git clone https://github.com/cmotc/lairart; \
+	\git clone git@github.com:$(GH_NAME)/lair-deb || \git clone https://github.com/$(GH_NAME)/lair-deb || git clone https://github.com/cmotc/lair-deb; \
+	\git clone git@github.com:$(GH_NAME)/lair-msi || \git clone https://github.com/$(GH_NAME)/lair-msi || git clone https://github.com/cmotc/lair-msi; \
+	\git clone git@github.com:$(GH_NAME)/lair-web || \git clone https://github.com/$(GH_NAME)/lair-web || git clone https://github.com/cmotc/lair-web; \
+	echo "Cloned subprojects"
 
 deinit:
 	 \git remote remove github
@@ -24,6 +36,7 @@ deinit:
 	echo "removed pre-init"
 
 init:
+	make init-upstream
 	\git remote add github git@github.com:$(GH_NAME)/lair-manifest
 	cd valair && \git remote add github git@github.com:$(GH_NAME)/valair
 	cd sdl2-vapi && \git  remote add github git@github.com:$(GH_NAME)/sdl2-vapi
@@ -45,7 +58,7 @@ init-upstream:
 	cd lair-deb && \git  remote add upstream git@github.com:cmotc/lair-deb
 	cd lair-msi && \git  remote add upstream git@github.com:cmotc/lair-msi
 	cd lair-web && \git  remote add upstream git@github.com:cmotc/lair-web
-	echo "Initialized Working Remotes"
+	echo "Initialized Upstream Remotes"
 
 checkout:
 	\git checkout master
@@ -71,9 +84,21 @@ commit:
 	echo "Committed Release:"
 	echo "${COMMIT_MESSAGE}"
 
+fetch:
+	\git ; \
+	cd valair && \git; \
+	cd ../sdl2-vapi && \git; \
+	cd ../tox-vapi && \git; \
+	cd ../tartrazine && \git; \
+	cd ../lairart && \git; \
+	cd ../lair-deb && \git; \
+	cd ../lair-msi && \git; \
+	cd ../lair-web && \git; \
+	echo "Pulled in updates"
+
 update:
 	make commit
-	repo sync --force-sync
+	repo sync --force-sync || make fetch
 
 upload:
 	\git push github master; \
@@ -95,8 +120,8 @@ clean:
 	cd ../lairart && make clean; \
 	cd ../lair-deb && make clean; \
 	cd ../lair-msi && make clean; \
-	cd ../lair-web && make clean
-	rm *.buildinfo *.changes *.deb *.deb.md *.tar.xz *.dsc
+	cd ../lair-web && make clean; \
+	rm *.buildinfo *.changes *.deb *.deb.md *.tar.xz *.dsc; \
 	echo "Finished cleaning"
 
 lair:
