@@ -52,6 +52,8 @@ commit:
 	cd ../lair-msi && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 	cd ../lair-web && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 	cd .. && \git add . && \git commit -am "${COMMIT_MESSAGE}"
+	echo "Committed Release:"
+	echo "${COMMIT_MESSAGE}"
 
 update:
 	cd valair && \git push github mobs
@@ -65,14 +67,17 @@ update:
 	\git push github master
 	echo "Pushed Working Updates"
 
-filter:
-	git filter-branch --tree-filter 'rm -rf .repo' --prune-empty HEAD
-	git for-each-ref --format="%(refname)" refs/original/ | xargs -n 1 git update-ref -d
-	echo .repo/ >> .gitignore
-	git add .gitignore
-	git commit -m 'Removing .repo from git history'
-	git gc
-	git push github master --force
+clean:
+	cd valair && make clean; \
+	cd ../sdl2-vapi && make clean; \
+	cd ../tox-vapi && make clean; \
+	cd ../tartrazine && make clean; \
+	cd ../lairart && make clean; \
+	cd ../lair-deb && make clean; \
+	cd ../lair-msi && make clean; \
+	cd ../lair-web && make clean
+	rm *.buildinfo *.changes *.deb *.deb.md *.tar.xz *.dsc
+	echo "Finished cleaning"
 
 lair:
 	cd valair && make deb-pkg; make windows
