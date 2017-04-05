@@ -36,7 +36,7 @@ deinit:
 	echo "removed pre-init"
 
 init:
-	make init-upstream
+	make init-upstream; \
 	\git remote add github git@github.com:$(GH_NAME)/lair-manifest
 	cd valair && \git remote add github git@github.com:$(GH_NAME)/valair
 	cd sdl2-vapi && \git  remote add github git@github.com:$(GH_NAME)/sdl2-vapi
