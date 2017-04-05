@@ -12,6 +12,9 @@ COMMIT_MESSAGE += `date +'%y%m%d%H%M%S'`
 dummy:
 	echo "test"
 
+symlink:
+	for file in $(ls /usr/include/lua5.2/); do sudo ln -s /usr/include/lua5.2/$file /usr/include/$file; done
+
 clone:
 	\git clone git@github.com:$(GH_NAME)/valair || \git clone https://github.com/$(GH_NAME)/valair || git clone https://github.com/cmotc/valair; \
 	\git clone git@github.com:$(GH_NAME)/sdl2-vapi || \git clone https://github.com/$(GH_NAME)/sdl2-vapi || git clone https://github.com/cmotc/sdl2-vapi; \
@@ -107,7 +110,7 @@ update:
 
 force-update:
 	make clean; \
-	rm -rf */* */.git */.repo .git/index.lock; \
+	rm -rf */* */.git */.repo .git/; \
 	repo sync --force-sync || make fetch \
 	make init
 
