@@ -3,7 +3,10 @@ GVERSION = '9.1'
 VERSION = '9.1'
 GH_NAME = 'cmotc'
 
-COMMIT_MESSAGE = `date +'%y-%m-%d-%H-%M-%S'`
+COMMIT_MESSAGE = $(GH_NAME)
+COMMIT_MESSAGE += $(DEV_MESSAGE)
+COMMIT_MESSAGE += `date +'%y%m%d%H%M%S'`
+
 
 dummy:
 	echo "test"
