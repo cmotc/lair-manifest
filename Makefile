@@ -47,6 +47,7 @@ init:
 	cd lair-msi && \git  remote add github git@github.com:$(GH_NAME)/lair-msi
 	cd lair-web && \git  remote add github git@github.com:$(GH_NAME)/lair-web
 	echo "Initialized Working Remotes"
+	make checkout
 
 init-upstream:
 	\git remote add upstream git@github.com:cmotc/lair-manifest
