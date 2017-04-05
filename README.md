@@ -34,7 +34,17 @@ to get copies of all the repositories and
         make init
 
 which will set up a remote for your fork under the name "github" and under the
-name "upstream" for by branch. then you can run
+name "upstream" for by branch. Then you can run
+
+        make update
+
+to pull in updates from my source. It will use repo if repo is initialized or
+fall back to using git if repo fails in any way.
+
+        make push
+
+will push all changes, along with a messge(export DEV_MESSAGE="commit message"
+before calling make push) to push local changes to your own branch.
 
 Building all the Packages
 -------------------------
