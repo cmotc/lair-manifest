@@ -20,15 +20,15 @@ deinit:
 	echo "removed pre-init"
 
 init:
-	\git remote add github git@github.com:cmotc/lair-manifest && \git checkout master
-	cd valair && \git remote add github git@github.com:cmotc/valair && \git  checkout mobs
-	cd sdl2-vapi && \git  remote add github git@github.com:cmotc/sdl2-vapi && \git  checkout master
-	cd tox-vapi && \git  remote add github git@github.com:cmotc/tox-vapi && \git  checkout master
-	cd tartrazine && \git  remote add github git@github.com:cmotc/tartrazine && \git  checkout master
-	cd lairart && \git  remote add github git@github.com:cmotc/lairart && \git  checkout master
-	cd lair-deb && \git  remote add github git@github.com:cmotc/lair-deb && \git  checkout gh-pages
-	cd lair-msi && \git  remote add github git@github.com:cmotc/lair-msi && \git  checkout master
-	cd lair-web && \git  remote add github git@github.com:cmotc/lair-web && \git  checkout master
+	\git remote add github git@github.com:cmotc/lair-manifest
+	cd valair && \git remote add github git@github.com:cmotc/valair
+	cd sdl2-vapi && \git  remote add github git@github.com:cmotc/sdl2-vapi
+	cd tox-vapi && \git  remote add github git@github.com:cmotc/tox-vapi
+	cd tartrazine && \git  remote add github git@github.com:cmotc/tartrazine
+	cd lairart && \git  remote add github git@github.com:cmotc/lairart
+	cd lair-deb && \git  remote add github git@github.com:cmotc/lair-deb
+	cd lair-msi && \git  remote add github git@github.com:cmotc/lair-msi
+	cd lair-web && \git  remote add github git@github.com:cmotc/lair-web
 	echo "Initialized Working Remotes"
 
 checkout:
