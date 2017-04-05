@@ -1,0 +1,50 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Format: 1.8
+Date: Sun, 19 Feb 2017 17:49:03 -0500
+Source: lairart
+Binary: lairart
+Architecture: source amd64
+Version: 9.1-1
+Distribution: unstable
+Urgency: medium
+Maintainer: lair repo key <problemsolver@openmailbox.org>
+Changed-By: lair repo key <problemsolver@openmailbox.org>
+Description:
+ lairart    - LAIR! Roguelike Game(Artistic Assets), version 0.9
+Changes:
+ lairart (9.1-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+Checksums-Sha1:
+ 7feaf7dde301205d8ef023653f2d46cd132bcf72 1417 lairart_9.1-1.dsc
+ ba012fe979175e80e0290e1535888d06c15daf87 62059778 lairart_9.1.orig.tar.gz
+ 978e795f0d6db0562ad2f616424a3ffd62c44b63 7956 lairart_9.1-1.debian.tar.xz
+ d1cc71a304cd377c4efc7bf10afa5f81d218df2e 5554 lairart_9.1-1_amd64.buildinfo
+ 5552cc8c92bff80d96fddd990cbc1e5c9bdb7bf9 67586 lairart_9.1-1_amd64.deb
+Checksums-Sha256:
+ d9e15d281a370e6ae62efa292171c032b9e76d729c0e563ece02f8fcbf87a06a 1417 lairart_9.1-1.dsc
+ 4251a8e867a962d751937150b4b873e81742a78eeb8adea1cc9966c44bb69bf7 62059778 lairart_9.1.orig.tar.gz
+ b9ac743b5c810ca72174f770b68fa6762fb67c698878f03f7beb7bb81175a455 7956 lairart_9.1-1.debian.tar.xz
+ 17d8a0ee50a2e4ded68da5f5e299b3a833ccf7b20caec3d26f1c58d5b8727f39 5554 lairart_9.1-1_amd64.buildinfo
+ 1a8d462f6ab486d7f552ac11a9f8c223e3e4aed2b3c035aa6f5458fa0c06febd 67586 lairart_9.1-1_amd64.deb
+Files:
+ 425cf2cff06b15ace69ae058563ad109 1417 games extra lairart_9.1-1.dsc
+ 5c11edaabe64c107b8f653f07648fac4 62059778 games extra lairart_9.1.orig.tar.gz
+ 08e36dad720e6a027806eeec169a2859 7956 games extra lairart_9.1-1.debian.tar.xz
+ 92f78b729dc252d28bb3b07a2b714ab7 5554 games extra lairart_9.1-1_amd64.buildinfo
+ 2de49f9c648b2dead2f97a226dd8ee07 67586 games extra lairart_9.1-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkhcEeHHByb2JsZW1z
+b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrSnoIAITToT4Hnn053xLW
+Hd+JBhGISuR2B9SKdS2xRiKdg5+EoVLZVhzGpE6fOmDjTY0e/gKqA/elgswA8XzN
+mAIt7+wr77NS/gtkeXfBVJKDa1KDWdeuQQNPMeFThY745ik1ETnJIcIWIXTyjmAh
+vPYEE4aId+//Qg2bUtdVBgW65w9ks+0n5NNAki4Iiu02jG9NxDpYZyL/FXGIDv1Q
+zS85WBjn+A48FFBEuUn8VTsqYqDIrKNeaNxix1O5ek8/G1y2fXRnZ4lbJkccLM60
+FsOCdotDWJDPpbUYgKObcH+apZlPBsBssu1LF0ZmNU3dC3N0lovltprC43vchN55
+8AB2rrg=
+=1dSu
+-----END PGP SIGNATURE-----
