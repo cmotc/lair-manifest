@@ -39,7 +39,11 @@ name "upstream" for by branch. Then you can run
         make update
 
 to pull in updates from my source. It will use repo if repo is initialized or
-fall back to using git if repo fails in any way.
+fall back to using git if repo fails in any way. To completely bypass repo, do
+
+        make pull
+
+instrad of make update. When you've made some changes, doing
 
         make push
 
@@ -49,5 +53,16 @@ before calling make push) to push local changes to your own branch.
 Building all the Packages
 -------------------------
 
+Doing
+
         make full
 
+will rebuild all available packages. If you have a website and a repository for
+your branch, then you can make a release by doing
+
+        make release
+
+This will rebuild all the packages, re-generate the web site and the repository,
+and push the updates to the remote branches. Support for forks in places other
+than github will probably come soon because I'm tired and sorting folders calms
+me.

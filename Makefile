@@ -85,16 +85,20 @@ commit:
 	echo "${COMMIT_MESSAGE}"
 
 fetch:
-	\git ; \
-	cd valair && \git; \
-	cd ../sdl2-vapi && \git; \
-	cd ../tox-vapi && \git; \
-	cd ../tartrazine && \git; \
-	cd ../lairart && \git; \
-	cd ../lair-deb && \git; \
-	cd ../lair-msi && \git; \
-	cd ../lair-web && \git; \
+	\git rebase upstream/master; \
+	cd valair && \git rebase upstream/mobs; \
+	cd ../sdl2-vapi && \git rebase upstream/master; \
+	cd ../tox-vapi && \git rebase upstream/master; \
+	cd ../tartrazine && \git rebase upstream/master; \
+	cd ../lairart && \git rebase upstream/gh--pages; \
+	cd ../lair-deb && \git rebase upstream/gh-pages; \
+	cd ../lair-msi && \git rebase upstream/master; \
+	cd ../lair-web && \git rebase upstream/master; \
 	echo "Pulled in updates"
+
+pull:
+	make commit
+	make fetch
 
 update:
 	make commit
