@@ -104,35 +104,35 @@ lair:
 
 update-lair:
 	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
-		\git push
+		\git push github mobs
 
 sdl2:
 	cd sdl2-vapi && make deb-pkg
 
 update-sdl2:
 	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
-		\git push
+		\git push github master
 
 tox:
 	cd tox-vapi && make deb-pkg
 
 update-tox:
 	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
-		\git push
+		\git push github master
 
 yellow:
 	cd tartrazine && make deb-pkg
 
 update-yellow:
 	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
-		\git push
+		\git push github master
 
 art:
 	cd lairart && make && make deb-pkg; make windows;
 
 update-art:
 	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
-		\git push
+		\git push github gh-pages
 
 msi:
 	cd lair-msi && make windows
@@ -141,12 +141,13 @@ update-msi:
 	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github master
 
-
 web:
 	echo "True"
 	rm -rf lair-web/lair-deb
 	cp -R lair-deb lair-web/lair-deb
 	rm -rf lair-web/lair-deb/.git
+
+update-web:
 	cd lair-web && make && git add . && git commit -am "new webpage" && git push github master
 
 deb:
