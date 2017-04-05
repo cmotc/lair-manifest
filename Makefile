@@ -37,7 +37,7 @@ checkout:
 	cd sdl2-vapi && \git  checkout master
 	cd tox-vapi && \git  checkout master
 	cd tartrazine && \git  checkout master
-	cd lairart && \git  checkout master
+	cd lairart && \git  checkout gh-pages
 	cd lair-deb && \git  checkout gh-pages
 	cd lair-msi && \git  checkout master
 	cd lair-web && \git  checkout master
@@ -58,7 +58,7 @@ update:
 	cd sdl2-vapi && \git push github master
 	cd tox-vapi && \git push github master
 	cd tartrazine && \git push github master
-	cd lairart && \git push github master
+	cd lairart && \git push github gh-pages
 	cd lair-deb && \git push github gh-pages
 	cd lair-msi && \git push github master
 	cd lair-web && \git push github master
@@ -72,7 +72,7 @@ filter:
 	git add .gitignore
 	git commit -m 'Removing .repo from git history'
 	git gc
-	git push origin master --force
+	git push github master --force
 
 lair:
 	cd valair && make deb-pkg; make windows
@@ -87,10 +87,10 @@ yellow:
 	cd tartrazine && make deb-pkg
 
 msi:
-	cd lair-msi && make windows && git add . && git commit -am "new msi package" && git push origin master
+	cd lair-msi && make windows && git add . && git commit -am "new msi package" && git push github master
 
 art:
-	cd lairart && make deb-pkg; make windows; git add . && git commit -am "new msi package images" && git push origin master
+	cd lairart && make deb-pkg; make windows; git add . && git commit -am "new msi package images" && git push github master
 
 web:
 	echo "True"
@@ -129,8 +129,8 @@ full:
 	make sdl2
 	make tox
 	make yellow
-	make msi
 	make art
+	make msi
 	make deb
 	make web
 
