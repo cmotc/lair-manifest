@@ -757,7 +757,13 @@ Now running lintian...
 Could not find a profile matching "{VENDOR}/main" for vendor devuan at /usr/share/lintian/commands/lintian line 1561.
 Finished running lintian.
 Now signing changes and any dsc files...
- signfile dsc lairart_9.1-1.dsc idk <problemsolver@openmailbox.org>
-gpg: skipped "idk <problemsolver@openmailbox.org>": No secret key
-gpg: /tmp/debsign.CLkWtVGz/lairart_9.1-1.dsc: clear-sign failed: No secret key
-debsign: gpg error occurred!  Aborting....
+ signfile dsc lairart_9.1-1.dsc lair repo key <problemsolver@openmailbox.org>
+
+ fixup_buildinfo lairart_9.1-1.dsc lairart_9.1-1_amd64.buildinfo
+ signfile buildinfo lairart_9.1-1_amd64.buildinfo lair repo key <problemsolver@openmailbox.org>
+
+ fixup_changes dsc lairart_9.1-1.dsc lairart_9.1-1_amd64.changes
+ fixup_changes buildinfo lairart_9.1-1_amd64.buildinfo lairart_9.1-1_amd64.changes
+ signfile changes lairart_9.1-1_amd64.changes lair repo key <problemsolver@openmailbox.org>
+
+Successfully signed dsc, buildinfo, changes files

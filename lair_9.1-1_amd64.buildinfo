@@ -7,20 +7,20 @@ Binary: lair
 Architecture: amd64 source
 Version: 9.1-1
 Checksums-Md5:
- 18c93b8f268083872d118d13e2332217 1550 lair_9.1-1.dsc
+ 75b86263f2ab8e304b2625aef1b7e011 1550 lair_9.1-1.dsc
  f3a4ea298c723a147e3be3aed0923e50 373244 lair-dbgsym_9.1-1_amd64.deb
  c9b31119d03f40564eeebdd5d92c3f69 65172 lair_9.1-1_amd64.deb
 Checksums-Sha1:
- d31601ca53307896f42c7e71e0e2eb64f3e1e830 1550 lair_9.1-1.dsc
+ c04cfc4cf3fca38f17cde0c3a57eadf656dbd5cf 1550 lair_9.1-1.dsc
  aefda437c429a80ac27c392b666af4243cc86f5b 373244 lair-dbgsym_9.1-1_amd64.deb
  0b99931fad12bc23ec73490452d12fde26b19500 65172 lair_9.1-1_amd64.deb
 Checksums-Sha256:
- bc875a9c562c62485064ea9207dcc80bc3991588854a0ac9a92d78b323a5f8d6 1550 lair_9.1-1.dsc
+ fba317efacc3dc54511dcc6f4ce3396405a17d7eced92b5d696b6038c4e83856 1550 lair_9.1-1.dsc
  0e518bc81a0ff16efe6be85cfe4edc3f13e4d80c3b40ed84fc516bbcdabca648 373244 lair-dbgsym_9.1-1_amd64.deb
  2dd0b9ee00f732b2fe9a3abd17b3cac5d45f1ab4bbfb7f914a525bbb1c0566ed 65172 lair_9.1-1_amd64.deb
 Build-Origin: Devuan
 Build-Architecture: amd64
-Build-Date: Wed, 05 Apr 2017 00:16:39 -0400
+Build-Date: Wed, 05 Apr 2017 00:27:48 -0400
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
@@ -385,13 +385,13 @@ Environment:
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkb6oeHHByb2JsZW1z
-b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrFmAH/jLRB7sgOy24pSrj
-iQSF5yF0pTtYXllMAapEaQhZ7RzW0HdiWw4Oy0oumSGWuv/8txQ/KpOiM3MXxmSR
-D+sVr1FrazUGtIxzFrfTpUWFxcPn1Fqn8OxlnQqBQP1Rsh4suarn+AOo+llDu2oX
-SpzdAxyyk0mWAsYs+oHJ1l0MpEavslgH57+dxS7P7HK0BejHBrGMidlCEX9jxN7D
-6SWKAqyD/zIa7pKRTrz3k8+3+9kiL3avdCeuyLUX3xzR/e2Qh4mCm2u0bQYggGVR
-eaRyw+BYMi1Y9tC7yFqei4ASdJxRPm5ThZj95nMX5mYw9+aSdY+plAjuBvubRQYm
-s5YPllc=
-=Fn7W
+iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkckYeHHByb2JsZW1z
+b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQr0IAH/2ywnPbTzs5y52pc
+WzNPUjVIx/8pQkTaxlrzjo7TRG9Z4hb+5JIhQkezZjJTQzr4VQAtLouIoZkvjC2C
+0n9WmxeAsbRMlE8Pp/ViskpUqTa3iCI0JAm8M2RUpO4wY29Aaff744rpFMNDvcc3
+7MeVw5LmHMsdGzYhRKzNdwUQLWyfkdfHg5ksLpytJhgRrkIalKfVXP8ndWQjGiw7
+s/rBg0jYZ7K6xoZ8nOTXuM6WxTKbz15aUXnb9t6nW6PRuBugRyqbAv0lwunCZRsP
+17v17teuvN8tkPWoSI3aAyrAVSJz/zrlFYnqa6kPxIBAFQCOCsSjxgFaMOX6InZU
+Zij+z3I=
+=ERLl
 -----END PGP SIGNATURE-----

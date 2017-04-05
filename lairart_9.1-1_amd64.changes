@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 Format: 1.8
 Date: Sun, 19 Feb 2017 17:49:03 -0500
 Source: lairart
@@ -6,7 +9,7 @@ Architecture: source amd64
 Version: 9.1-1
 Distribution: unstable
 Urgency: medium
-Maintainer: idk <problemsolver@openmailbox.org>
+Maintainer: lair repo key <problemsolver@openmailbox.org>
 Changed-By: lair repo key <problemsolver@openmailbox.org>
 Description:
  lairart    - LAIR! Roguelike Game(Artistic Assets), version 0.9
@@ -15,20 +18,33 @@ Changes:
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1:
- 8395a137be84bbc3723af9added200eef60b9e73 828 lairart_9.1-1.dsc
- dff509697fdce96f1055f3a34cbc056b80e5e716 62415861 lairart_9.1.orig.tar.gz
- 1ef2960558399127d9d790440dec832ee75e6f6c 7956 lairart_9.1-1.debian.tar.xz
- 47c3196bbbb3cef0f101322b8af574517d98b846 4972 lairart_9.1-1_amd64.buildinfo
- 2dab60d8bdf696f623c1e1f0ecf8ce751cb29133 67580 lairart_9.1-1_amd64.deb
+ f04799dc9605018613ed6ec81eab0641e86421eb 1417 lairart_9.1-1.dsc
+ d8f1434af6bf448ada1982e5398fba150d1597b5 62415886 lairart_9.1.orig.tar.gz
+ 978e795f0d6db0562ad2f616424a3ffd62c44b63 7956 lairart_9.1-1.debian.tar.xz
+ 24f431944d2bde77aae6749248d342b5aa8aaf4c 5554 lairart_9.1-1_amd64.buildinfo
+ 5552cc8c92bff80d96fddd990cbc1e5c9bdb7bf9 67586 lairart_9.1-1_amd64.deb
 Checksums-Sha256:
- 72eac7ff63fb81f4d34207c622b3d4b4f726def896273f0141f8a56a5471bfee 828 lairart_9.1-1.dsc
- 8de31e88017c037fb923f1105002feb25b84e55c943572afdb6352fa3563642a 62415861 lairart_9.1.orig.tar.gz
- 1128865fc5d8cde9154e594de45a9e1d8a3fb431bfc953d2bd9e73cc4827e7e5 7956 lairart_9.1-1.debian.tar.xz
- c780034784ee46de87dbf522a3e2cc4c8baa7c67f8fc0f10c0348198a4a27280 4972 lairart_9.1-1_amd64.buildinfo
- df78c5aa5a99f295b6cba9ba5b2463afaec2ba01dc0073302f98688591bb0ca9 67580 lairart_9.1-1_amd64.deb
+ 4e69ef3d133453e72d8b48b97eb2cb90a282df340d74c5ad94d2b155c5c0ab22 1417 lairart_9.1-1.dsc
+ b8d6bd85851c4c6c45db9d42d3f6a3a7100ad9a08b8947961e06b1fc26551dad 62415886 lairart_9.1.orig.tar.gz
+ b9ac743b5c810ca72174f770b68fa6762fb67c698878f03f7beb7bb81175a455 7956 lairart_9.1-1.debian.tar.xz
+ ca1a955977c1b4820b727f66814fb2ce393f61113faac6212205b40992d1fe83 5554 lairart_9.1-1_amd64.buildinfo
+ 1a8d462f6ab486d7f552ac11a9f8c223e3e4aed2b3c035aa6f5458fa0c06febd 67586 lairart_9.1-1_amd64.deb
 Files:
- a001fe857d5b30e1eaee4052181ed891 828 games extra lairart_9.1-1.dsc
- b5bc15c94c578956bf97e5dce934d997 62415861 games extra lairart_9.1.orig.tar.gz
- 7a099c792337c676b80f43aa9ca766f8 7956 games extra lairart_9.1-1.debian.tar.xz
- d97d311c39748c1737585476dbf8d77e 4972 games extra lairart_9.1-1_amd64.buildinfo
- fbe590fd0bac9ee1e5d2f2d588f2d97e 67580 games extra lairart_9.1-1_amd64.deb
+ c945d99c92be33664c3cdda88452e368 1417 games extra lairart_9.1-1.dsc
+ eba89a87b59575c9f0f7caa5cf67d06e 62415886 games extra lairart_9.1.orig.tar.gz
+ 08e36dad720e6a027806eeec169a2859 7956 games extra lairart_9.1-1.debian.tar.xz
+ 6921525727afa90db6a75710b6bf478f 5554 games extra lairart_9.1-1_amd64.buildinfo
+ 2de49f9c648b2dead2f97a226dd8ee07 67586 games extra lairart_9.1-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+
+iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkcqoeHHByb2JsZW1z
+b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQr/UsH/iZ4hXDD99LiPXL/
+pkVhr2DEcmCP9PuLzuu9Ca/XqPM2PwnlgkJ8ZZdoKKmJI0NNrroiCXRSZNEiCOXo
+Nj7wuVjRkztYJ0MxspCzfMSgyUbzgPIdDdzo5aK7T7/wHRVP5xqMLMelOzE1tPiY
+KcMoKWkrLCDpOzcZ3j7sDgW8Gf6tm8mHFqjyaAsPcF65/MpppiXWlPuxK95K+KuM
+/K64URJZK4oLX++4mAyU3MRkHJPYHfNSQPWY4BQ4WvbB57/FjFcZWivf4HSYIVQw
+HkDG0zfg0dNbmN8zv4wL19LQSM93g9mdqz7NfibCa0lTC+MPJh/3RezNJsel8bCe
+XxbbrxE=
+=VpnH
+-----END PGP SIGNATURE-----
