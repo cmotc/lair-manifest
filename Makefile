@@ -125,7 +125,7 @@ clean:
 	cd ../lair-deb && make clean; \
 	cd ../lair-msi && make clean; \
 	cd ../lair-web && make clean; \
-	rm *.buildinfo *.changes *.deb *.deb.md *.tar.xz *.dsc; \
+	cd .. && rm *.buildinfo *.changes *.deb *.deb.md *.dsc *.tar.xz *.tar.gz *.debian.tar.xz *.debian.tar.gz *.orig.tar.gz *.orig.tar.zz; \
 	echo "Finished cleaning"
 
 lair:
