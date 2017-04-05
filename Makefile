@@ -102,7 +102,7 @@ web:
 	rm -rf lair-web/lair-deb
 	cp -R lair-deb lair-web/lair-deb
 	rm -rf lair-web/lair-deb/.git
-	cd lair-web && make && git add . && git commit -am "new webpage" && git push origin master
+	cd lair-web && make && git add . && git commit -am "new webpage" && git push github master
 
 deb:
 	cp lair_$(GVERSION)-1_amd64.buildinfo \
@@ -146,3 +146,4 @@ push:
 release:
 	make full
 	make push
+	repo sync
