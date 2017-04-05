@@ -7,20 +7,20 @@ Binary: lair
 Architecture: amd64 source
 Version: 9.1-1
 Checksums-Md5:
- 06d5d785fb7e1c981b91dd0d16ad72cc 1550 lair_9.1-1.dsc
+ 57f3405354a25a25c567b7c220e06a85 1550 lair_9.1-1.dsc
  f3a4ea298c723a147e3be3aed0923e50 373244 lair-dbgsym_9.1-1_amd64.deb
  c9b31119d03f40564eeebdd5d92c3f69 65172 lair_9.1-1_amd64.deb
 Checksums-Sha1:
- 93488ddfdc195056f082c2bc013844d460649d7f 1550 lair_9.1-1.dsc
+ 8303284a7b6a6b10af527310d7f808c0ccb13686 1550 lair_9.1-1.dsc
  aefda437c429a80ac27c392b666af4243cc86f5b 373244 lair-dbgsym_9.1-1_amd64.deb
  0b99931fad12bc23ec73490452d12fde26b19500 65172 lair_9.1-1_amd64.deb
 Checksums-Sha256:
- 088020797f853aa66f195c33e067213b4e99204be19478ede5a1669739fe1066 1550 lair_9.1-1.dsc
+ 53485c6b69aec19196c8fa51fbbe9a1e0472eb28233914713cee203936c4c644 1550 lair_9.1-1.dsc
  0e518bc81a0ff16efe6be85cfe4edc3f13e4d80c3b40ed84fc516bbcdabca648 373244 lair-dbgsym_9.1-1_amd64.deb
  2dd0b9ee00f732b2fe9a3abd17b3cac5d45f1ab4bbfb7f914a525bbb1c0566ed 65172 lair_9.1-1_amd64.deb
 Build-Origin: Devuan
 Build-Architecture: amd64
-Build-Date: Wed, 05 Apr 2017 00:38:46 -0400
+Build-Date: Wed, 05 Apr 2017 00:42:47 -0400
 Installed-Build-Depends:
  autoconf (= 2.69-10),
  automake (= 1:1.15-6),
@@ -385,13 +385,13 @@ Environment:
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkdNkeHHByb2JsZW1z
-b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrnaQH/iidvnamAr+uVraM
-/EKMe+5v1nY+m9Awk06u1dSm8gBMSdxkoQe5xMBGHRgZuzChtfxSP7/Z7Dw5j7pE
-oGmsMAQgauNljWbLm0KoSzbpZjUlwMeTdFcJPniMhkO1ssA/CZtwnhZRYkD7hLkI
-W3rdk1BcDKTGwaKTVyS4+XWT2qpFFRT78+NitBezMEdp9z6m98OAHML0FxynETfX
-cO6NZBgThXJ8S05s6S48IUSXioMyFlDI2KM8TVK76SBMLWiFgoCsStc/3BBX5fTQ
-ngKH80KweDkIzsGsyVhDVkoP2z/XuFjnL5LQxP+oJlOp0m8AfKJnfaC7GGvEfheX
-3bI6Cws=
-=vKq5
+iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkdcoeHHByb2JsZW1z
+b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrGsIH/RqD3NS9N5ItjGsZ
+tg9eI+yICRswtB6WPoCp4fmCyjHZwK602IiuLSG8k+dLEAzvOezF0YbSq3iwcoY9
+yXpNAnoNdMoDKf4H7hzGUTWPCsiwWRHGR9J1ZrkUlEngirDbTDx7AJ3BTRt0r9ag
+VBMF8RGyRZX7iec/iTFVgMsrsFx4iWWpfv36OexFm9L8MvUIg6zOgGfbDMHcUcjp
+edinmX0XwT8zpQhnrAuPgMqdpfyUumoOoe1KW8ZMGGQ5bHhhYYXPuV/8OdSVPFoY
+/0eQXfj6kFr3RBzxaJxfNaT5k8D5//Cz32K4Dy7H31tjJKingIU10cOXDt0A2JfG
+CmUDm18=
+=WCFe
 -----END PGP SIGNATURE-----

@@ -91,11 +91,11 @@ tox:
 yellow:
 	cd tartrazine && make deb-pkg
 
-msi:
-	cd lair-msi && make windows && git add . && git commit -am "new msi package" && git push github master
-
 art:
-	cd lairart && make deb-pkg; make windows; git add . && git commit -am "new msi package images" && git push github master
+	cd lairart && make deb-pkg; make windows;
+
+msi:
+	cd lair-msi && make windows
 
 web:
 	echo "True"
@@ -138,4 +138,6 @@ full:
 	make msi
 	make deb
 	make web
+	make commit
+	make update
 
