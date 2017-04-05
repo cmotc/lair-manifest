@@ -105,7 +105,7 @@ update:
 	repo sync --force-sync || make fetch
 
 force-update:
-	rm -rf */* */.git */.repo; \
+	rm -rf */* */.git */.repo .git/index.lock; \
 	make clean; \
 	make update; \
 	make init
