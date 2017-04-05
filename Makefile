@@ -50,7 +50,7 @@ init:
 	make checkout
 
 init-upstream:
-	\git remote add upstream git@github.com:cmotc/lair-manifest
+	\git remote add upstream git@github.com:cmotc/lair-manifest; \
 	cd valair && \git remote add upstream git@github.com:cmotc/valair
 	cd sdl2-vapi && \git  remote add upstream git@github.com:cmotc/sdl2-vapi
 	cd tox-vapi && \git  remote add upstream git@github.com:cmotc/tox-vapi
