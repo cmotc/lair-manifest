@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote name="origin"
-          fetch="." />
+          fetch="git://github.com/cmotc" />
 
   <default remote="origin"
            revision="master" />
 
-  <project path="repo1" name="repo1" />
-  <project path="repo2" name="repo2" />
+  <project path="lairart" name="lairart" />
+  <project path="valair" name="valair" />
+  <project path="lair-msi" name="lair-msi" />
+  <project path="lair-deb" name="lair-deb" />
+  <project path="lair-web" name="lair-web" />
+  <project path="tartrazine" name="tartrazine" />
+  <project path="tox-vapi" name="tox-vapi" />
+  <project path="sdl2-vapi" name="sdl2-vapi" />
+
 </manifest>
