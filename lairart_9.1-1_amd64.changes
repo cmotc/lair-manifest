@@ -18,33 +18,33 @@ Changes:
  .
    * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
 Checksums-Sha1:
- db0b6b36b8ae8fe79f30fd3b4b78bda25ba6e22d 1417 lairart_9.1-1.dsc
- eb8a32deddd845d99014bdfbc001c7dda5fd93a8 62415874 lairart_9.1.orig.tar.gz
+ 92815e8b87c3279cbfc39ec6e708b1a8d8e76f32 1417 lairart_9.1-1.dsc
+ 8754c21b23874828a90a504a79c9c2e40bc21301 62415923 lairart_9.1.orig.tar.gz
  978e795f0d6db0562ad2f616424a3ffd62c44b63 7956 lairart_9.1-1.debian.tar.xz
- fbd12e116bc89d85b536b94bdaecb1b2631a301c 5554 lairart_9.1-1_amd64.buildinfo
+ cc5708a4025e73a95e0792956b3ca556f3ccdd5f 5554 lairart_9.1-1_amd64.buildinfo
  5552cc8c92bff80d96fddd990cbc1e5c9bdb7bf9 67586 lairart_9.1-1_amd64.deb
 Checksums-Sha256:
- 687553c125fd5f83ce28596ab5ee5bfc1b9b004e3ed3cabfcefdae4964becbd9 1417 lairart_9.1-1.dsc
- cdbb686c44573d082ed28f2e7e921de859e30b46de0cb3bc4017e6f98a1dfa02 62415874 lairart_9.1.orig.tar.gz
+ 5f7893caa0f3792df8ed3cf3a011ca5f00de5f01f082bdef44aff0abce95e58a 1417 lairart_9.1-1.dsc
+ fdec2ba1a1f5d4ac458304deb422faa425d126e13426cec66473a3946b91fa91 62415923 lairart_9.1.orig.tar.gz
  b9ac743b5c810ca72174f770b68fa6762fb67c698878f03f7beb7bb81175a455 7956 lairart_9.1-1.debian.tar.xz
- e538ef02e92c5bcb1b121da13ac8fc958e002c273599a4e4be00ed808d7f2087 5554 lairart_9.1-1_amd64.buildinfo
+ 1136910fd4047ee17eb3c338e96ef38d066fa4d83cae78d18be7c0b05bf02a31 5554 lairart_9.1-1_amd64.buildinfo
  1a8d462f6ab486d7f552ac11a9f8c223e3e4aed2b3c035aa6f5458fa0c06febd 67586 lairart_9.1-1_amd64.deb
 Files:
- 2bb326b442713c2520f555f9e7a6b0e8 1417 games extra lairart_9.1-1.dsc
- cf15a8505ffa0f7f7aaddbf8260bde4a 62415874 games extra lairart_9.1.orig.tar.gz
+ 86f2f428dd4ae3ee40058d68bce321ac 1417 games extra lairart_9.1-1.dsc
+ b8d11bd86ef483d61fc60abd0098c732 62415923 games extra lairart_9.1.orig.tar.gz
  08e36dad720e6a027806eeec169a2859 7956 games extra lairart_9.1-1.debian.tar.xz
- 118a418e11be8164ab56d126f79b72e1 5554 games extra lairart_9.1-1_amd64.buildinfo
+ 39b999fe51250fdd7d6852417e86e334 5554 games extra lairart_9.1-1_amd64.buildinfo
  2de49f9c648b2dead2f97a226dd8ee07 67586 games extra lairart_9.1-1_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 
-iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkdzUeHHByb2JsZW1z
-b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQr2IIH/j04Z23HDz0a7Wir
-0nXX6nBrwopxBnAL6W1I68vm5NgzYuK15wIVYH9pGl2hqsObxzJyjSvLdRQZLh0I
-SSxe5t58C7R6vPDeE5bjebVm4fFORyPKwAYo0adGwATT6lf/9akfxttZw2SARUpO
-rddP2UyfapZE9uecijptercd4ysf0C3jChehWut/dYYhikKnuC29iu+ga1cr5DFl
-n2cmS2gmuvMBNs4T4+lAP8R9bdKMetQSm8hHizdFm/1FHdMLymXDfEiw6kPgtm5/
-DAGBon3odZ/SrbPS6cVmaxXt4Tq/Jasl7H6aoPWkXBOybr/oLrehFiosrm0bKpzd
-BpEWCH4=
-=hxJa
+iQFSBAEBCAA8FiEEwM7uKXtf5F/2EKrG8F+F+kRsBCsFAljkeJ8eHHByb2JsZW1z
+b2x2ZXJAb3Blbm1haWxib3gub3JnAAoJEPBfhfpEbAQrBugIAIvwUz8BXva6TI9X
+0wWeKNIgBirSvJEvSIYkZT9BIdA7Sgzs+N//lRyNwfNdJrl6VD/CDiH0znGv7gVx
+ncuFCUcTCWNE7P6/hxwsAmDdSIjW+eyMSHkHiLk79z8WYPSTkjTzeSsW1fLtCwzv
+xYXaR3xr84Do+oDYYrNqvniz4Ls0Y0TyXkO7m3oOePQ5EiNStVpQVxddY6v+rMiS
+vtJRGeBxH4NFM1huV/oWdpmhLs5aFtXGHdH855/z+aQWPUHvS1omS60EyaChvqsL
+RVxNI55tgBvuY5aunRS6wWgDPS80tUQsgSuOA0BQh+qgkQiX7mj2i7d3GPDa4DJA
+ZL/mATw=
+=b/p8
 -----END PGP SIGNATURE-----
