@@ -144,6 +144,7 @@ push:
 	make update
 
 release:
+	make clean
 	make full
 	make push
 	repo sync
