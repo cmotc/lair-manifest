@@ -5,7 +5,7 @@
 
   <default remote="origin"
            revision="master" />
-
+  <project path="." name="lair-manifest" />
   <project path="lairart" name="lairart" />
   <project path="valair" name="valair" revision="new-master"/>
   <project path="lair-msi" name="lair-msi" />
