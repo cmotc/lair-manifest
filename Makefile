@@ -143,3 +143,6 @@ push:
 	make commit
 	make update
 
+release:
+	make full
+	make push
