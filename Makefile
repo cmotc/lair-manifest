@@ -64,7 +64,7 @@ commit:
 	cd ../lair-deb && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 	cd ../lair-msi && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 	cd ../lair-web && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
-	cd .. && \git add . && \git commit -am "${COMMIT_MESSAGE}"
+	cd .. && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 	echo "Committed Release:"
 	echo "${COMMIT_MESSAGE}"
 
