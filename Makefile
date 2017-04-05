@@ -158,7 +158,7 @@ full:
 
 push:
 	make commit
-	make update
+	make upload
 
 release:
 	make full
