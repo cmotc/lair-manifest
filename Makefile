@@ -70,7 +70,7 @@ commit:
 
 update:
 	make commit
-	repo sync
+	repo sync --force-sync
 
 upload:
 	\git push github master; \
