@@ -102,20 +102,45 @@ clean:
 lair:
 	cd valair && make deb-pkg; make windows
 
+update-lair:
+	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+		\git push
+
 sdl2:
 	cd sdl2-vapi && make deb-pkg
+
+update-sdl2:
+	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+		\git push
 
 tox:
 	cd tox-vapi && make deb-pkg
 
+update-tox:
+	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+		\git push
+
 yellow:
 	cd tartrazine && make deb-pkg
+
+update-yellow:
+	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+		\git push
 
 art:
 	cd lairart && make && make deb-pkg; make windows;
 
+update-art:
+	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+		\git push
+
 msi:
 	cd lair-msi && make windows
+
+update-msi:
+	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+		\git push
+
 
 web:
 	echo "True"
