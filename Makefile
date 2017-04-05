@@ -92,7 +92,7 @@ yellow:
 	cd tartrazine && make deb-pkg
 
 art:
-	cd lairart && make deb-pkg; make windows;
+	cd lairart && make && make deb-pkg; make windows;
 
 msi:
 	cd lair-msi && make windows
