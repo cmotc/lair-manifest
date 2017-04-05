@@ -56,7 +56,7 @@ commit:
 	echo "${COMMIT_MESSAGE}"
 
 update:
-	cd valairls && \git push github mobs
+	cd valair && \git push github mobs
 	cd sdl2-vapi && \git push github master
 	cd tox-vapi && \git push github master
 	cd tartrazine && \git push github master
