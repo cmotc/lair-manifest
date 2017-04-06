@@ -136,7 +136,7 @@ clean:
 	echo "Finished cleaning"
 
 lair:
-	export VERSION=$(VERSION);cd valair && make deb-pkg
+	export VERSION=$(VERSION);cd valair && make deb-pkg || make deb-upkg
 	cd valair && make windows
 
 update-lair:
@@ -165,7 +165,8 @@ update-yellow:
 		\git push github master
 
 art:
-	export VERSION=$(VERSION);cd lairart && make && make deb-pkg; make windows;
+	export VERSION=$(VERSION);cd lairart && make && make deb-pkg || make deb-upkg
+	 make windows;
 
 update-art:
 	export VERSION=$(VERSION);cd lairart && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
