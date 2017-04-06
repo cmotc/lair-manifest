@@ -6,12 +6,11 @@ COMMIT_MESSAGE = $(GH_NAME)
 COMMIT_MESSAGE += $(DEV_MESSAGE)
 COMMIT_MESSAGE += `date +'%y%m%d%H%M%S'`
 
-
 dummy:
 	echo "test"
 
 symlink:
-	for file in $(ls /usr/include/lua5.2/); do sudo ln -s /usr/include/lua5.2/$file /usr/include/$file; done
+	./.fix_lua.sh
 
 clone:
 	\git clone git@github.com:$(GH_NAME)/valair || \git clone https://github.com/$(GH_NAME)/valair || git clone https://github.com/cmotc/valair; \
@@ -195,12 +194,7 @@ update-web:
 		\git push github master
 
 sign:
-	for file in $(ls *.dsc); do debsign -k $(KEY) -e $(GH_NAME) $(file); done
-	for file in $(ls *.buildinfo); do debsign -k $(KEY) -e $(GH_NAME) $(file); done
-	for file in $(ls *.changes); do debsign -k $(KEY) -e $(GH_NAME) $(file); done
-	for file in $(ls *.deb); do debsigs -k $(KEY) -e $(GH_NAME) $(file); done
-	for file in $(ls *.tar.xz); do gpg --detach-sign $(KEY); done
-	for file in $(ls *.tar.gz); do gpg --detach-sign $(KEY); done
+	export KEY=$(KEY); export GH_NAME=$(GH_NAME); ./.do_sign.sh
 
 deb:
 	rm lair-deb/packages/*
