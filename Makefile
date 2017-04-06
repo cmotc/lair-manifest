@@ -236,7 +236,20 @@ push:
 	make commit
 	make upload
 
+version:
+	echo 'version placeholder'
+	#cd valair && make release; \
+	#cd ../sdl2-vapi && make release; \
+	#cd ../tox-vapi && make release; \
+	#cd ../tartrazine && make release; \
+	#cd ../lairart && make release; \
+	#cd ../lair-deb && make release; \
+	#cd ../lair-msi && make release; \
+	#cd ../lair-web && make release; \
+	#echo 'Made new Version Numbers'
+
 release:
+	make version
 	gpg --clear-sign -u $(KEY) README.md
 	make full
 	make sign
