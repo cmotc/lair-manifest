@@ -1,7 +1,5 @@
 include config.mk
 DATE = `date +'%Y%m%d'`
-VERSION = '0.9'
-
 
 COMMIT_MESSAGE = $(GH_NAME)
 COMMIT_MESSAGE += $(DEV_MESSAGE)
@@ -138,61 +136,65 @@ clean:
 	echo "Finished cleaning"
 
 lair:
-	cd valair && make deb-pkg; make windows
+	export VERSION=$(VERSION);cd valair && make deb-pkg
+	cd valair && make windows
 
 update-lair:
-	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+	export VERSION=$(VERSION);cd valair &&\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github mobs
 
 sdl2:
-	cd sdl2-vapi && make deb-pkg
+	export VERSION=$(VERSION);cd sdl2-vapi && make deb-pkg
 
 update-sdl2:
-	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+	export VERSION=$(VERSION);cd sdl2-vapi && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github master
 
 tox:
-	cd tox-vapi && make deb-pkg
+	export VERSION=$(VERSION);cd tox-vapi && make deb-pkg
 
 update-tox:
-	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+	export VERSION=$(VERSION);cd tox-vapi && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github master
 
 yellow:
-	cd tartrazine && make deb-pkg
+	export VERSION=$(VERSION);cd tartrazine && make deb-pkg
 
 update-yellow:
-	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+	export VERSION=$(VERSION);cd tartrazine && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github master
 
 art:
-	cd lairart && make && make deb-pkg; make windows;
+	export VERSION=$(VERSION);cd lairart && make && make deb-pkg; make windows;
 
 update-art:
-	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+	export VERSION=$(VERSION);cd lairart && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github gh-pages
 
 msi:
-	cd lair-msi && make windows
+	export VERSION=$(VERSION);cd lair-msi && make windows
 
 update-msi:
-	\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+	export VERSION=$(VERSION);cd lair-msi && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github master
 
 web:
+	export VERSION=$(VERSION);
 	echo "True"
 	rm -rf lair-web/lair-deb
 	cp -R lair-deb lair-web/lair-deb
 	rm -rf lair-web/lair-deb/.git
+	cd lair-web && make && git add . && git commit -am "new webpage ${COMMIT_MESSAGE}" && git push github master
 
 update-web:
-	cd lair-web && make && git add . && git commit -am "new webpage" && git push github master
+	export VERSION=$(VERSION);cd lair-web && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+		\git push github master
 
 deb:
 	cp lair_$(VERSION)-1_amd64.buildinfo \
 		lair_$(VERSION)-1_amd64.changes \
 		lair_$(VERSION)-1_amd64.deb \
-		lair_$(VERSION)-1_amd64.deb.md \
+		lair_$(VERSION)_amd64.deb.md \
 		lair_$(VERSION)-1.debian.tar.xz \
 		lair_$(VERSION)-1.dsc \
 		lair_$(VERSION).orig.tar.gz \
@@ -201,17 +203,16 @@ deb:
 		sdl2-vapi_2.0-1_amd64.deb \
 		tartrazine_0.9-1_amd64.deb \
 		tox-vapi_0.9-1_amd64.deb \
-		lair-deb/packages
+		lair-deb/packages; \
 	cp lairart_$(VERSION)-1_amd64.buildinfo \
 		lairart_$(VERSION)-1_amd64.changes \
 		lairart_$(VERSION)-1_amd64.deb \
 		lairart_$(VERSION)-1.debian.tar.xz \
 		lairart_$(VERSION)-1.dsc \
-		lairart_$(VERSION).orig.tar.gz \
-		lair-dbgsym_$(VERSION)-1_amd64.deb \
-		sdl2-vapi_2.0-1_amd64.deb \
-		lair-deb/packages
-	cd lair-deb && apt-now
+		lairart_$(VERSION)-1.orig.tar.gz \
+		lair-dbgsym_$(VERSION)_amd64.deb \
+		lair-deb/packages; \
+	cd lair-deb && ./apt-now
 
 full:
 	make lair
@@ -222,6 +223,7 @@ full:
 	make msi
 	make deb
 	make web
+	echo "Rebuilt the whole suite"
 
 push:
 	make commit
