@@ -185,6 +185,8 @@ web:
 	rm -rf lair-web/lair-deb
 	cp -R lair-deb lair-web/lair-deb
 	rm -rf lair-web/lair-deb/.git
+
+reweb:
 	cd lair-web && make && git add . && git commit -am "new webpage ${COMMIT_MESSAGE}" && git push github master
 
 update-web:
