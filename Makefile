@@ -1,7 +1,6 @@
 include config.mk
 DATE = `date +'%Y%m%d'`
-GVERSION = '9.1'
-VERSION = '9.1'
+VERSION = '0.9'
 
 
 COMMIT_MESSAGE = $(GH_NAME)
@@ -190,15 +189,15 @@ update-web:
 	cd lair-web && make && git add . && git commit -am "new webpage" && git push github master
 
 deb:
-	cp lair_$(GVERSION)-1_amd64.buildinfo \
-		lair_$(GVERSION)-1_amd64.changes \
-		lair_$(GVERSION)-1_amd64.deb \
-		lair_$(GVERSION)-1_amd64.deb.md \
-		lair_$(GVERSION)-1.debian.tar.xz \
-		lair_$(GVERSION)-1.dsc \
-		lair_$(GVERSION).orig.tar.gz \
-		lair-dbgsym_$(GVERSION)-1_amd64.deb \
-		lair-dbgsym_$(GVERSION)-1_amd64.deb.md \
+	cp lair_$(VERSION)-1_amd64.buildinfo \
+		lair_$(VERSION)-1_amd64.changes \
+		lair_$(VERSION)-1_amd64.deb \
+		lair_$(VERSION)-1_amd64.deb.md \
+		lair_$(VERSION)-1.debian.tar.xz \
+		lair_$(VERSION)-1.dsc \
+		lair_$(VERSION).orig.tar.gz \
+		lair-dbgsym_$(VERSION)-1_amd64.deb \
+		lair-dbgsym_$(VERSION)-1_amd64.deb.md \
 		sdl2-vapi_2.0-1_amd64.deb \
 		tartrazine_0.9-1_amd64.deb \
 		tox-vapi_0.9-1_amd64.deb \
