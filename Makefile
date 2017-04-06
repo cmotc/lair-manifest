@@ -166,7 +166,7 @@ update-yellow:
 
 art:
 	export VERSION=$(VERSION);cd lairart && make && make deb-pkg || make deb-upkg
-	 make windows;
+	cd lairart && make windows;
 
 update-art:
 	export VERSION=$(VERSION);cd lairart && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
