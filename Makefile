@@ -1,3 +1,4 @@
+include ../key.mk #Sets a variable named KEY which specifies what to sign with
 include config.mk
 DATE = `date +'%Y%m%d'`
 
@@ -187,13 +188,20 @@ web:
 	rm -rf lair-web/lair-deb/.git
 
 reweb:
-	cd lair-web && make && git add . && git commit -am "new webpage ${COMMIT_MESSAGE}" && git push github master
+	cd lair-web && make && git add . && git commit -am "new webpage ${COMMIT_MESSAGE}" ; git push github master
 
 update-web:
 	export VERSION=$(VERSION);cd lair-web && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github master
 
+sign:
+	for file in $(ls *.dsc); do debsign -k $(KEY) -e $(GH_NAME) $(file); done
+	for file in $(ls *.buildinfo); do debsign -k $(KEY) -e $(GH_NAME) $(file); done
+	for file in $(ls *.changes); do debsign -k $(KEY) -e $(GH_NAME) $(file); done
+	for file in $(ls *.deb); do debsigs -k $(KEY) -e $(GH_NAME) $(file); done
+
 deb:
+	rm lair-deb/packages/*
 	cp lair_$(VERSION)-1_amd64.buildinfo \
 		lair_$(VERSION)-1_amd64.changes \
 		lair_$(VERSION)-1_amd64.deb \
@@ -229,10 +237,14 @@ full:
 	echo "Rebuilt the whole suite"
 
 push:
+	gpg --clear-sign -u $(KEY) README.md
+	make reweb
 	make commit
 	make upload
 
 release:
+	gpg --clear-sign -u $(KEY) README.md
 	make full
+	make reweb
 	make push
 	repo sync
