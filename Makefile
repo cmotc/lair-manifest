@@ -219,7 +219,7 @@ deb:
 	cd lair-deb && ./apt-now
 
 full:
-	gpg --clear-sign -u $(KEY) README.md
+	gpg --batch --yes --clear-sign -u $(KEY) README.md
 	make lair
 	make sdl2
 	make tox
@@ -231,7 +231,7 @@ full:
 	echo "Rebuilt the whole suite"
 
 push:
-	gpg --clear-sign -u $(KEY) README.md
+	gpg --batch --yes --clear-sign -u $(KEY) README.md
 	make reweb
 	make commit
 	make upload
@@ -250,7 +250,7 @@ version:
 
 release:
 	make version
-	gpg --clear-sign -u $(KEY) README.md
+	gpg --batch --yes --clear-sign -u $(KEY) README.md
 	make full
 	make sign
 	make reweb
