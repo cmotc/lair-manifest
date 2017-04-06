@@ -199,6 +199,8 @@ sign:
 	for file in $(ls *.buildinfo); do debsign -k $(KEY) -e $(GH_NAME) $(file); done
 	for file in $(ls *.changes); do debsign -k $(KEY) -e $(GH_NAME) $(file); done
 	for file in $(ls *.deb); do debsigs -k $(KEY) -e $(GH_NAME) $(file); done
+	for file in $(ls *.tar.xz); do gpg --detach-sign $(KEY); done
+	for file in $(ls *.tar.gz); do gpg --detach-sign $(KEY); done
 
 deb:
 	rm lair-deb/packages/*
@@ -226,6 +228,7 @@ deb:
 	cd lair-deb && ./apt-now
 
 full:
+	gpg --clear-sign -u $(KEY) README.md
 	make lair
 	make sdl2
 	make tox
@@ -248,3 +251,11 @@ release:
 	make reweb
 	make push
 	repo sync
+
+#Don't use this yet, it's teaching me about what needs to exist to make the code
+#run modules and plugins from configrable locations right now.
+
+run:
+	./valair/bin/LAIR -v 9 \
+		-m tiny \
+		-p \
