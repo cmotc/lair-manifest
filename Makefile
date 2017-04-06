@@ -1,4 +1,3 @@
-include ../key.mk #Sets a variable named KEY which specifies what to sign with
 include config.mk
 DATE = `date +'%Y%m%d'`
 
