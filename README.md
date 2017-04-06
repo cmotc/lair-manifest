@@ -24,8 +24,8 @@ and complete the configuration set before moving on.
 Configuration
 -------------
 Unless you just want to keep your changes local and only pull in updates from
-my source, open config.mk and change GH_NAME to match your accound. When you do
-that, you can:
+my source, open config.mk and change GH_NAME to match your account and KEY to
+a gpg identity you want to use to sign the packages. When you do that, you can:
 
         make clone
 
@@ -62,8 +62,14 @@ Doing
 
         make full
 
-will rebuild all available packages. If you have a website and a repository for
-your branch, then you can make a release by doing
+will rebuild all available packages. Before you distribute anything, you should
+make sure that the people who download those files can be assured of their
+integrity. To make signatures for all the files using $KEY, run
+
+        make sign
+
+If you have a website and a repository for your branch, then you can make a
+release by doing
 
         make release
 
@@ -71,4 +77,3 @@ This will rebuild all the packages, re-generate the web site and the repository,
 and push the updates to the remote branches. Support for forks in places other
 than github will probably come soon because I'm tired and sorting folders calms
 me.
-

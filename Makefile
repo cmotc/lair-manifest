@@ -180,8 +180,6 @@ update-msi:
 		\git push github master
 
 web:
-	export VERSION=$(VERSION);
-	echo "True"
 	rm -rf lair-web/lair-deb
 	cp -R lair-deb lair-web/lair-deb
 	rm -rf lair-web/lair-deb/.git
@@ -242,6 +240,7 @@ push:
 release:
 	gpg --clear-sign -u $(KEY) README.md
 	make full
+	make sign
 	make reweb
 	make push
 	repo sync
