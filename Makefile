@@ -85,15 +85,15 @@ commit:
 	echo "${COMMIT_MESSAGE}"
 
 fetch:
-	\git rebase upstream/master; \
-	cd valair && \git rebase upstream/mobs; \
-	cd ../sdl2-vapi && \git rebase upstream/master; \
-	cd ../tox-vapi && \git rebase upstream/master; \
-	cd ../tartrazine && \git rebase upstream/master; \
-	cd ../lairart && \git rebase upstream/gh--pages; \
-	cd ../lair-deb && \git rebase upstream/gh-pages; \
-	cd ../lair-msi && \git rebase upstream/master; \
-	cd ../lair-web && \git rebase upstream/master; \
+	git fetch upstream &&\git rebase upstream/master; \
+	cd valair && git fetch upstream &&\git rebase upstream/mobs; \
+	cd ../sdl2-vapi && git fetch upstream &&\git rebase upstream/master; \
+	cd ../tox-vapi && git fetch upstream &&\git rebase upstream/master; \
+	cd ../tartrazine && git fetch upstream &&\git rebase upstream/master; \
+	cd ../lairart && git fetch upstream &&\git rebase upstream/gh--pages; \
+	cd ../lair-deb && git fetch upstream &&\git rebase upstream/gh-pages; \
+	cd ../lair-msi && git fetch upstream &&\git rebase upstream/master; \
+	cd ../lair-web && git fetch upstream &&\git rebase upstream/master; \
 	echo "Pulled in updates"
 
 pull:
