@@ -7,6 +7,7 @@
            pushurl="git@github.com:cmotc/"
            revision="master" />
   <project path="." name="lair-manifest" />
+  <project path="digitalandy" name="digitalandy" />
   <project path="lairart" name="lairart" revision="gh-pages" />
   <project path="valair" name="valair" revision="mobs"/>
   <project path="lair-msi" name="lair-msi" />
