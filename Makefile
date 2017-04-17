@@ -151,13 +151,12 @@ update-lair:
 	export VERSION=$(VERSION);cd valair &&\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github mobs
 
-digitalandy:
+dandy:
 	export VERSION=$(VERSION);cd digitalandy && make deb-pkg || make deb-upkg
-	cd valair && make windows
 
-update-digitalandy:
+update-dandy:
 	export VERSION=$(VERSION);cd digitalandy &&\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
-		\git push github mobs
+		\git push github master
 
 sdl2:
 	export VERSION=$(VERSION);cd sdl2-vapi && make deb-pkg
@@ -224,21 +223,21 @@ deb:
 		sdl2-vapi_2.0-1_amd64.deb \
 		tartrazine_0.9-1_amd64.deb \
 		tox-vapi_0.9-1_amd64.deb \
+		digitalandy_1-1_amd64.deb \
 		lair-deb/packages; \
 	cp lairart_$(VERSION)-1_amd64.buildinfo \
 		lairart_$(VERSION)-1_amd64.changes \
 		lairart_$(VERSION)-1_amd64.deb \
 		lairart_$(VERSION)-1.debian.tar.xz \
 		lairart_$(VERSION)-1.dsc \
-		lairart_$(VERSION)-1.orig.tar.gz \
+		lairart_$(VERSION).orig.tar.gz \
 		lair-dbgsym_$(VERSION)_amd64.deb \
 		lair-deb/packages; \
 	cd lair-deb && ./apt-now
 
 full:
-	gpg --batch --yes --clear-sign -u $(KEY) README.md
 	make lair
-	make digitalandy
+	make dandy
 	make sdl2
 	make tox
 	make yellow
