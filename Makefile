@@ -132,6 +132,7 @@ upload:
 
 clean:
 	cd valair && make clean; \
+	cd ../digitalandy && make clean; \
 	cd ../sdl2-vapi && make clean; \
 	cd ../tox-vapi && make clean; \
 	cd ../tartrazine && make clean; \
@@ -139,7 +140,7 @@ clean:
 	cd ../lair-deb && make clean; \
 	cd ../lair-msi && make clean; \
 	cd ../lair-web && make clean; \
-	cd .. && rm *.buildinfo *.changes *.deb *.deb.md *.dsc *.tar.xz *.tar.gz *.debian.tar.xz *.debian.tar.gz *.orig.tar.gz *.orig.tar.zz; \
+	cd .. && rm *.buildinfo *.changes *.deb *.deb.md *.dsc *.tar.xz *.tar.gz *.debian.tar.xz *.debian.tar.gz *.orig.tar.gz *.orig.tar.zz *.sig; \
 	echo "Finished cleaning"
 
 lair:
