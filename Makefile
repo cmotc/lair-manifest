@@ -13,6 +13,7 @@ symlink:
 
 clone:
 	\git clone git@github.com:$(GH_NAME)/valair || \git clone https://github.com/$(GH_NAME)/valair || git clone https://github.com/cmotc/valair; \
+	\git clone git@github.com:$(GH_NAME)/digitalandy || \git clone https://github.com/$(GH_NAME)/digitalandy || git clone https://github.com/cmotc/digitalandy; \
 	\git clone git@github.com:$(GH_NAME)/sdl2-vapi || \git clone https://github.com/$(GH_NAME)/sdl2-vapi || git clone https://github.com/cmotc/sdl2-vapi; \
 	\git clone git@github.com:$(GH_NAME)/tox-vapi || \git clone https://github.com/$(GH_NAME)/tox-vapi || git clone https://github.com/cmotc/tox-vapi; \
 	\git clone git@github.com:$(GH_NAME)/tartrazine || \git clone https://github.com/$(GH_NAME)/tartrazine || git clone https://github.com/cmotc/tartrazine; \
@@ -25,6 +26,7 @@ clone:
 deinit:
 	 \git remote remove github
 	cd valair && \git remote remove github
+	cd digitalandy && \git remote remove github
 	cd sdl2-vapi && \git remote remove github
 	cd tox-vapi && \git remote remove github
 	cd tartrazine && \git remote remove github
@@ -38,6 +40,7 @@ init:
 	make init-upstream; \
 	\git remote add github git@github.com:$(GH_NAME)/lair-manifest
 	cd valair && \git remote add github git@github.com:$(GH_NAME)/valair
+	cd digitalandy && \git remote add github git@github.com:$(GH_NAME)/digitalandy
 	cd sdl2-vapi && \git  remote add github git@github.com:$(GH_NAME)/sdl2-vapi
 	cd tox-vapi && \git  remote add github git@github.com:$(GH_NAME)/tox-vapi
 	cd tartrazine && \git  remote add github git@github.com:$(GH_NAME)/tartrazine
@@ -51,6 +54,7 @@ init:
 init-upstream:
 	\git remote add upstream git@github.com:cmotc/lair-manifest; \
 	cd valair && \git remote add upstream git@github.com:cmotc/valair
+	cd digitalandy && \git remote add upstream git@github.com:cmotc/digitalandy
 	cd sdl2-vapi && \git  remote add upstream git@github.com:cmotc/sdl2-vapi
 	cd tox-vapi && \git  remote add upstream git@github.com:cmotc/tox-vapi
 	cd tartrazine && \git  remote add upstream git@github.com:cmotc/tartrazine
@@ -63,6 +67,7 @@ init-upstream:
 checkout:
 	\git checkout master
 	cd valair && \git  checkout mobs
+	cd digitalandy && \git  checkout master
 	cd sdl2-vapi && \git  checkout master
 	cd tox-vapi && \git  checkout master
 	cd tartrazine && \git  checkout master
@@ -73,6 +78,7 @@ checkout:
 
 commit:
 	cd valair && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+	cd ../digitalandy && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 	cd ../sdl2-vapi && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 	cd ../tox-vapi && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 	cd ../tartrazine && \git add . && \git commit -am "${COMMIT_MESSAGE}"; \
@@ -87,6 +93,7 @@ commit:
 fetch:
 	git fetch upstream &&\git rebase upstream/master; \
 	cd valair && git fetch upstream &&\git rebase upstream/mobs; \
+	cd ../digitalandy && git fetch upstream &&\git rebase upstream/master; \
 	cd ../sdl2-vapi && git fetch upstream &&\git rebase upstream/master; \
 	cd ../tox-vapi && git fetch upstream &&\git rebase upstream/master; \
 	cd ../tartrazine && git fetch upstream &&\git rebase upstream/master; \
@@ -113,6 +120,7 @@ force-update:
 upload:
 	\git push github master; \
 	cd valair && \git push github mobs; \
+	cd ../digitalandy && \git push github master; \
 	cd ../sdl2-vapi && \git push github master; \
 	cd ../tox-vapi && \git push github master; \
 	cd ../tartrazine && \git push github master; \
@@ -140,6 +148,14 @@ lair:
 
 update-lair:
 	export VERSION=$(VERSION);cd valair &&\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
+		\git push github mobs
+
+digitalandy:
+	export VERSION=$(VERSION);cd digitalandy && make deb-pkg || make deb-upkg
+	cd valair && make windows
+
+update-digitalandy:
+	export VERSION=$(VERSION);cd digitalandy &&\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
 		\git push github mobs
 
 sdl2:
@@ -221,6 +237,7 @@ deb:
 full:
 	gpg --batch --yes --clear-sign -u $(KEY) README.md
 	make lair
+	make digitalandy
 	make sdl2
 	make tox
 	make yellow
