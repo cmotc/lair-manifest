@@ -23,6 +23,7 @@ and complete the configuration set before moving on.
 
 Configuration
 -------------
+
 Unless you just want to keep your changes local and only pull in updates from
 my source, open config.mk and change GH_NAME to match your account and KEY to
 a gpg identity you want to use to sign the packages. When you do that, you can:
