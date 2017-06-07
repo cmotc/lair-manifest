@@ -38,30 +38,30 @@ deinit:
 
 init:
 	make init-upstream; \
-	\git remote add github git@github.com:$(GH_NAME)/lair-manifest
-	cd valair && \git remote add github git@github.com:$(GH_NAME)/valair
-	cd digitalandy && \git remote add github git@github.com:$(GH_NAME)/digitalandy
-	cd sdl2-vapi && \git  remote add github git@github.com:$(GH_NAME)/sdl2-vapi
-	cd tox-vapi && \git  remote add github git@github.com:$(GH_NAME)/tox-vapi
-	cd tartrazine && \git  remote add github git@github.com:$(GH_NAME)/tartrazine
-	cd lairart && \git  remote add github git@github.com:$(GH_NAME)/lairart
-	cd lair-deb && \git  remote add github git@github.com:$(GH_NAME)/lair-deb
-	cd lair-msi && \git  remote add github git@github.com:$(GH_NAME)/lair-msi
-	cd lair-web && \git  remote add github git@github.com:$(GH_NAME)/lair-web
+	\git remote add github git@github.com:$(GH_NAME)/lair-manifest; \
+	cd valair && \git remote add github git@github.com:$(GH_NAME)/valair; \
+	cd ../digitalandy && \git remote add github git@github.com:$(GH_NAME)/digitalandy; \
+	cd ../sdl2-vapi && \git  remote add github git@github.com:$(GH_NAME)/sdl2-vapi; \
+	cd ../tox-vapi && \git  remote add github git@github.com:$(GH_NAME)/tox-vapi; \
+	cd ../tartrazine && \git  remote add github git@github.com:$(GH_NAME)/tartrazine; \
+	cd ../lairart && \git  remote add github git@github.com:$(GH_NAME)/lairart; \
+	cd ../lair-deb && \git  remote add github git@github.com:$(GH_NAME)/lair-deb; \
+	cd ../lair-msi && \git  remote add github git@github.com:$(GH_NAME)/lair-msi; \
+	cd ../lair-web && \git  remote add github git@github.com:$(GH_NAME)/lair-web; \
 	echo "Initialized Working Remotes"
 	make checkout
 
 init-upstream:
 	\git remote add upstream git@github.com:cmotc/lair-manifest; \
-	cd valair && \git remote add upstream git@github.com:cmotc/valair
-	cd digitalandy && \git remote add upstream git@github.com:cmotc/digitalandy
-	cd sdl2-vapi && \git  remote add upstream git@github.com:cmotc/sdl2-vapi
-	cd tox-vapi && \git  remote add upstream git@github.com:cmotc/tox-vapi
-	cd tartrazine && \git  remote add upstream git@github.com:cmotc/tartrazine
-	cd lairart && \git  remote add upstream git@github.com:cmotc/lairart
-	cd lair-deb && \git  remote add upstream git@github.com:cmotc/lair-deb
-	cd lair-msi && \git  remote add upstream git@github.com:cmotc/lair-msi
-	cd lair-web && \git  remote add upstream git@github.com:cmotc/lair-web
+	cd valair && \git remote add upstream git@github.com:cmotc/valair; \
+	cd ../digitalandy && \git remote add upstream git@github.com:cmotc/digitalandy; \
+	cd ../sdl2-vapi && \git  remote add upstream git@github.com:cmotc/sdl2-vapi; \
+	cd ../tox-vapi && \git  remote add upstream git@github.com:cmotc/tox-vapi; \
+	cd ../tartrazine && \git  remote add upstream git@github.com:cmotc/tartrazine; \
+	cd ../lairart && \git  remote add upstream git@github.com:cmotc/lairart; \
+	cd ../lair-deb && \git  remote add upstream git@github.com:cmotc/lair-deb; \
+	cd ../lair-msi && \git  remote add upstream git@github.com:cmotc/lair-msi; \
+	cd ../lair-web && \git  remote add upstream git@github.com:cmotc/lair-web; \
 	echo "Initialized Upstream Remotes"
 
 checkout:
