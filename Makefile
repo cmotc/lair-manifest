@@ -266,6 +266,7 @@ version:
 	#echo 'Made new Version Numbers'
 
 release:
+	sudo echo
 	make version
 	gpg --batch --yes --clear-sign -u $(KEY) README.md
 	make full
