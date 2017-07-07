@@ -66,7 +66,7 @@ init-upstream:
 
 checkout:
 	\git checkout master
-	cd valair && \git  checkout mobs
+	cd valair && \git  checkout open-worldify
 	cd digitalandy && \git  checkout master
 	cd sdl2-vapi && \git  checkout master
 	cd tox-vapi && \git  checkout master
@@ -92,7 +92,7 @@ commit:
 
 fetch:
 	git fetch upstream &&\git rebase upstream/master; \
-	cd valair && git fetch upstream &&\git rebase upstream/mobs; \
+	cd valair && git fetch upstream &&\git rebase upstream/open-worldify; \
 	cd ../digitalandy && git fetch upstream &&\git rebase upstream/master; \
 	cd ../sdl2-vapi && git fetch upstream &&\git rebase upstream/master; \
 	cd ../tox-vapi && git fetch upstream &&\git rebase upstream/master; \
@@ -119,7 +119,7 @@ force-update:
 
 upload:
 	\git push github master; \
-	cd valair && \git push github mobs; \
+	cd valair && \git push github open-worldify; \
 	cd ../digitalandy && \git push github master; \
 	cd ../sdl2-vapi && \git push github master; \
 	cd ../tox-vapi && \git push github master; \
@@ -149,7 +149,7 @@ lair:
 
 update-lair:
 	export VERSION=$(VERSION);cd valair &&\git add . && \git commit -am "${COMMIT_MESSAGE}"; \
-		\git push github mobs
+		\git push github open-worldify
 
 dandy:
 	export VERSION=$(VERSION);cd digitalandy && make deb-pkg || make deb-upkg

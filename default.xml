@@ -9,7 +9,7 @@
   <project path="." name="lair-manifest" />
   <project path="digitalandy" name="digitalandy" />
   <project path="lairart" name="lairart" revision="gh-pages" />
-  <project path="valair" name="valair" revision="mobs"/>
+  <project path="valair" name="valair" revision="open-worldify"/>
   <project path="lair-msi" name="lair-msi" />
   <project path="lair-deb" name="lair-deb" revision="gh-pages"/>
   <project path="lair-web" name="lair-web" />
